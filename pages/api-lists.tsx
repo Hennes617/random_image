@@ -108,7 +108,7 @@ export default function ApiList() {
             </div>
             <div className="bg-gray-100 p-4 rounded-lg mb-4">
               <code className="text-gray-800">
-                  https://random-images.woxly.de/api/random-image
+                  https://random-image.woxly.de/api/random-image
               </code>
             </div>
      
@@ -130,7 +130,7 @@ export default function ApiList() {
             </div>
             <div className="bg-gray-100 p-4 rounded-lg mb-4">
               <code className="text-gray-800">
-                https://random-images.woxly.de/api/skeleton-random-image
+                https://random-image.woxly.de/api/skeleton-random-image
               </code>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -155,7 +155,7 @@ export default function ApiList() {
             </div>
             <div className="bg-gray-100 p-4 rounded-lg mb-4">
               <code className="text-gray-800">
-                  https://random-images.woxly.de/api/swag-wallpaper
+                  https://random-image.woxly.de/api/swag-wallpaper
               </code>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
