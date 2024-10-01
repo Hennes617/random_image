@@ -141,9 +141,7 @@ export default function ApiList() {
 {/* studio-ghibli */}
           <li>
             <h3 className="text-xl font-semibold mb-2">Studio Ghibli</h3>
-            <p className="text-gray-700 mb-4">
-              A collection of skeleton-themed images, suitable for all audiences.
-            </p>
+            
             <div className="flex items-center space-x-4 mb-4">
               <Link legacyBehavior href="/api/studio-ghibli">
                 <a className="px-6 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-800 transition">
@@ -155,6 +153,28 @@ export default function ApiList() {
             <div className="bg-gray-100 p-4 rounded-lg mb-4">
               <code className="text-gray-800">
                 https://random-image.woxly.de/api/studio-ghibli
+              </code>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+              
+             
+            </div>
+          </li>
+          {/* Minecraft Memes */}
+          <li>
+            <h3 className="text-xl font-semibold mb-2">Minecraft Memes</h3>
+        
+            <div className="flex items-center space-x-4 mb-4">
+              <Link legacyBehavior href="/api/minecraft-memes">
+                <a className="px-6 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-800 transition">
+                  Render Page
+                </a>
+              </Link>
+              
+            </div>
+            <div className="bg-gray-100 p-4 rounded-lg mb-4">
+              <code className="text-gray-800">
+                https://random-image.woxly.de/api/minecraft-memes
               </code>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
