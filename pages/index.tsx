@@ -112,7 +112,7 @@ export default function Home() {
           <p className="text-xl mb-10">
             The API shows the user every time they reload the page a random image.
           </p>
-          <Link legacyBehavior href="#api">
+          <Link legacyBehavior href="#Documentation">
             <a className="inline-block px-8 py-4 bg-blue-600 text-white rounded-full hover:bg-blue-800 transition">
               Docs
             </a>
