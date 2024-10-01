@@ -76,7 +76,7 @@ export default function Home() {
               </Link>
             </li>
             <li>
-              <Link legacyBehavior href="/api-list">
+              <Link legacyBehavior href="/api-lists">
                 <a
                   className="block py-2 md:py-0 text-gray-800 hover:text-blue-600"
                   onClick={handleLinkClick}
