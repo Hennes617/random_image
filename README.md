@@ -2,7 +2,7 @@
 
 Willkommen zum **Random Image API** Projekt! Dieses Projekt bietet eine einfache API zum Bereitstellen zufälliger Bilder aus verschiedenen Kategorien. Es wurde mit **Next.js**, **TypeScript** und **Tailwind CSS** entwickelt.
 
-![Random Image](https://your-domain.vercel.app/api/random-image)
+![Random Image](https://random-image.woxly.de/api/random-image)
 
 ## Inhaltsverzeichnis
 
@@ -23,7 +23,7 @@ Willkommen zum **Random Image API** Projekt! Dieses Projekt bietet eine einfache
 
 ## Demo
 
-Schau dir die Live-Demo an: [Random Image API](https://your-domain.vercel.app)
+Schau dir die Live-Demo an: [Random Image API](https://random-image.woxly.de)
 
 ## Funktionen
 
