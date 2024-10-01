@@ -1,40 +1,51 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Random Image API
 
-## Getting Started
+Willkommen zum **Random Image API** Projekt! Dieses Projekt bietet eine einfache API zum Bereitstellen zufälliger Bilder aus verschiedenen Kategorien. Es wurde mit **Next.js**, **TypeScript** und **Tailwind CSS** entwickelt.
 
-First, run the development server:
+![Random Image](https://your-domain.vercel.app/api/random-image)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Inhaltsverzeichnis
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- [Demo](#demo)
+- [Funktionen](#funktionen)
+- [Erste Schritte](#erste-schritte)
+  - [Voraussetzungen](#voraussetzungen)
+  - [Installation](#installation)
+  - [Projekt ausführen](#projekt-ausführen)
+- [API Endpunkte](#api-endpunkte)
+  - [/api/random-image](#apirandom-image)
+  - [/api/skeleton-random-image](#apiskeleton-random-image)
+  - [/api/swag-wallpaper](#apiswag-wallpaper)
+- [Verwendung](#verwendung)
+- [Beispiele](#beispiele)
+- [Contributing](#contributing)
+- [Lizenz](#lizenz)
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## Demo
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+Schau dir die Live-Demo an: [Random Image API](https://your-domain.vercel.app)
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Funktionen
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- **Zufällige Bilder**: Liefert zufällige Bilder aus vordefinierten Kategorien.
+- **Next.js**: Nutzung von Next.js für serverseitiges Rendering und API-Routen.
+- **TypeScript**: Stark typisierte Codebasis für bessere Wartbarkeit.
+- **Tailwind CSS**: Utility-First CSS-Framework für schnelles UI-Design.
+- **Responsive Design**: Vollständig responsive und mobilfreundliche Benutzeroberfläche.
+- **Optimierte Bilder**: Verwendet die Next.js Image-Komponente für optimiertes Laden.
 
-## Learn More
+## Erste Schritte
 
-To learn more about Next.js, take a look at the following resources:
+### Voraussetzungen
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Node.js** (Version 14.x oder neuer)
+- **npm** oder **yarn**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Installation
 
-## Deploy on Vercel
+1. **Repository klonen**:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+   ```bash
+   git clone https://github.com/dein-benutzername/random-image-api.git
+   cd random-image-api
+   ```

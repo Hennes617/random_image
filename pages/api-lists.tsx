@@ -68,7 +68,7 @@ export default function ApiList() {
             </li>
             <li>
               <a
-                href="https://github.com/PepeBigotes/random-image"
+                href="https://github.com/Hennes617/random_image"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block py-2 md:py-0 text-gray-800 hover:text-blue-600"
@@ -84,7 +84,7 @@ export default function ApiList() {
       {/* Hauptinhalt */}
       <main className="pt-24 pb-12 px-5 max-w-7xl mx-auto">
         <h1 className="text-center text-4xl font-bold mb-8">
-          <b>PepeBigotes/</b>random-image
+          <b>Hennes617/</b>random_image
         </h1>
 
         <h2 className="text-2xl font-semibold mb-6">
@@ -179,7 +179,7 @@ export default function ApiList() {
           </Link>
           |
           <a
-            href="https://github.com/PepeBigotes/random-image"
+            href="https://github.com/Hennes617/random_image"
             target="_blank"
             rel="noopener noreferrer"
             className="text-white hover:underline mx-2"

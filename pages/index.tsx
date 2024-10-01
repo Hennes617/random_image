@@ -87,7 +87,7 @@ export default function Home() {
             </li>
             <li>
               <a
-                href="https://github.com/PepeBigotes/random-image"
+                href="https://github.com/Hennes617/random_image"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block py-2 md:py-0 text-gray-800 hover:text-blue-600"
@@ -206,7 +206,7 @@ export default function Home() {
           </Link>
           |
           <a
-            href="https://github.com/PepeBigotes/random-image"
+            href="https://github.com/Hennes617/random_image"
             target="_blank"
             rel="noopener noreferrer"
             className="text-white hover:underline mx-2"
