@@ -81,7 +81,7 @@ export default function Home() {
                   className="block py-2 md:py-0 text-gray-800 hover:text-blue-600"
                   onClick={handleLinkClick}
                 >
-                  API
+                  API List
                 </a>
               </Link>
             </li>
@@ -104,7 +104,7 @@ export default function Home() {
       <section
         id="home"
         className="flex items-center justify-center h-screen bg-cover bg-center relative text-center"
-        style={{ backgroundImage: 'url(/api/random-image)' }}
+        style={{ backgroundImage: 'url(/api/nature-image)' }}
       >
         <div className="absolute inset-0 bg-black bg-opacity-50"></div>
         <div className="relative z-10 max-w-xl text-white px-5">
@@ -112,7 +112,7 @@ export default function Home() {
           <p className="text-xl mb-10">
             The API shows the user every time they reload the page a random image.
           </p>
-          <Link legacyBehavior href="#Documentation">
+          <Link legacyBehavior href="/api-lists">
             <a className="inline-block px-8 py-4 bg-blue-600 text-white rounded-full hover:bg-blue-800 transition">
               Docs
             </a>
@@ -137,7 +137,7 @@ export default function Home() {
         </div>
         <div className="max-w-lg mx-5 mt-10 md:mt-0">
           <Image
-            src="/api/random-image"
+            src="/api/nature-image"
             alt="Zufälliges Bild"
             width={500}
             height={300}
@@ -152,9 +152,9 @@ export default function Home() {
           <p className="bg-gray-900 text-gray-100 p-6 rounded-lg overflow-x-auto">
             <code>
               {`<!-- MARKDOWN: -->
-![Random image](https://random-image.woxly.de/api/random-image)
+![Random image](https://random-image.woxly.de/api/nature-image)
 <!-- HTML: -->
-<img alt="Random image" src="https://random-image.woxly.de/api/random-image">`}
+<img alt="Random image" src="https://random-image.woxly.de/api/nature-image">`}
             </code>
           </p>
         </div>
@@ -184,7 +184,7 @@ export default function Home() {
         </div>
         <div className="max-w-lg mx-5 mt-10 md:mt-0">
           <Image
-            src="/api/random-image"
+            src="/api/nature-image"
             alt="Anwendungsfälle"
             width={500}
             height={300}

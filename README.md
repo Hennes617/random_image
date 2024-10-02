@@ -2,7 +2,7 @@
 
 Willkommen zum **Random Image API** Projekt! Dieses Projekt bietet eine einfache API zum Bereitstellen zufälliger Bilder aus verschiedenen Kategorien. Es wurde mit **Next.js**, **TypeScript** und **Tailwind CSS** entwickelt.
 
-![Random Image](https://random-image.woxly.de/api/random-image)
+![Random Image](https://random-image.woxly.de/api/nature-image)
 
 ## Inhaltsverzeichnis
 
@@ -13,7 +13,7 @@ Willkommen zum **Random Image API** Projekt! Dieses Projekt bietet eine einfache
   - [Installation](#installation)
   - [Projekt ausführen](#projekt-ausführen)
 - [API Endpunkte](#api-endpunkte)
-  - [/api/random-image](#apirandom-image)
+  - [/api/nature-image](#apirandom-image)
   - [/api/skeleton-random-image](#apiskeleton-random-image)
   - [/api/swag-wallpaper](#apiswag-wallpaper)
 - [Verwendung](#verwendung)

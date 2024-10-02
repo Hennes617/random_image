@@ -1,4 +1,4 @@
-// pages/api/random-image.ts
+// pages/api/nature-image.ts
 import type { NextApiRequest, NextApiResponse } from 'next';
 import https from 'https';
 

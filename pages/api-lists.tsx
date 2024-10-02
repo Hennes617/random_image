@@ -94,12 +94,12 @@ export default function ApiList() {
         <ul className="space-y-12">
           {/* Example Images */}
           <li>
-            <h3 className="text-xl font-semibold mb-2">Example Images</h3>
+            <h3 className="text-xl font-semibold mb-2">Natur Images</h3>
             <p className="text-gray-700 mb-4">
-              A set of example images to showcase how this tool works.
+              A set of Natur images to showcase how this tool works.
             </p>
             <div className="flex items-center space-x-4 mb-4">
-              <Link legacyBehavior href="/api/random-image">
+              <Link legacyBehavior href="/api/nature-image">
                 <a className="px-6 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-800 transition">
                   Render Page
                 </a>
@@ -108,12 +108,35 @@ export default function ApiList() {
             </div>
             <div className="bg-gray-100 p-4 rounded-lg mb-4">
               <code className="text-gray-800">
-                  https://random-image.woxly.de/api/random-image
+                  https://random-image.woxly.de/api/nature-image
               </code>
             </div>
      
           </li>
-
+        {/* 2000 natur bilder */}
+          <li>
+            <h3 className="text-xl font-semibold mb-2">2000 Natur Images</h3>
+            <p className="text-gray-700 mb-4">
+              A collection of over 2000 Natur images 
+            </p>
+            <div className="flex items-center space-x-4 mb-4">
+              <Link legacyBehavior href="/api/natur-2000">
+                <a className="px-6 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-800 transition">
+                  Render Page
+                </a>
+              </Link>
+              
+            </div>
+            <div className="bg-gray-100 p-4 rounded-lg mb-4">
+              <code className="text-gray-800">
+                https://random-image.woxly.de/api/natur-2000
+              </code>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+              
+             
+            </div>
+          </li>
           {/* Skeleton Images */}
           <li>
             <h3 className="text-xl font-semibold mb-2">Skeleton Images</h3>
