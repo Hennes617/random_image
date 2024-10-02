@@ -22,7 +22,7 @@ export default function NotFound() {
     >
       {/* Gradient overlay for better text readability */}
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-gray-900/70 to-gray-900/90"></div>
-      
+     
       <motion.div 
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -72,6 +72,7 @@ export default function NotFound() {
       
       {/* Floating particles effect */}
       <Particles />
+  
     </div>
   )
 }

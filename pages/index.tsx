@@ -68,7 +68,7 @@ export default function Home() {
             <li>
               <Link legacyBehavior href="/">
                 <a
-                  className="block py-2 md:py-0 text-gray-800 hover:text-blue-600"
+                  className="block py-2 md:py-0 text-gray-800 hover:text-blue-600 font-semibold"
                   onClick={handleLinkClick}
                 >
                   Home
@@ -82,6 +82,16 @@ export default function Home() {
                   onClick={handleLinkClick}
                 >
                   API List
+                </a>
+              </Link>
+            </li>
+             <li>
+              <Link legacyBehavior href="/docs">
+                <a
+                  className="block py-2 md:py-0 text-gray-800 hover:text-blue-600 "
+                  onClick={handleLinkClick}
+                >
+                  Docs
                 </a>
               </Link>
             </li>
@@ -112,7 +122,7 @@ export default function Home() {
           <p className="text-xl mb-10">
             The API shows the user every time they reload the page a random image.
           </p>
-          <Link legacyBehavior href="/api-lists">
+          <Link legacyBehavior href="/docs">
             <a className="inline-block px-8 py-4 bg-blue-600 text-white rounded-full hover:bg-blue-800 transition">
               Docs
             </a>
@@ -137,7 +147,7 @@ export default function Home() {
         </div>
         <div className="max-w-lg mx-5 mt-10 md:mt-0">
           <Image
-            src="/api/nature-image"
+            src="/api/natur-2000"
             alt="Zufälliges Bild"
             width={500}
             height={300}
