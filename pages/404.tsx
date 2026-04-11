@@ -8,7 +8,7 @@ export default function NotFound() {
   const [imageUrl, setImageUrl] = useState('')
 
   useEffect(() => {
-    setImageUrl('/api/natur-2000')
+    setImageUrl('/api/nature-2000')
   }, [])
 
   return (
@@ -69,10 +69,10 @@ export default function NotFound() {
           </Link>
         </motion.div>
       </motion.div>
+     {/* 
       
-      {/* Floating particles effect */}
       <Particles />
-  
+      */}
     </div>
   )
 }

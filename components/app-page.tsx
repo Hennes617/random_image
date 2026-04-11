@@ -6,7 +6,7 @@ import { tomorrow } from 'react-syntax-highlighter/dist/esm/styles/prism'
 import { Button } from "@/components/ui/button"
 
 const jsonFiles = [
-  { name: 'Natur 2000', path: '/lists/natur-2000.json' },
+  { name: 'Nature 2000', path: '/lists/nature-2000.json' },
   { name: 'List 2', path: '/lists/list-2.json' },
   { name: 'List 3', path: '/lists/list-3.json' },
   { name: 'List 4', path: '/lists/list-4.json' },

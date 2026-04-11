@@ -13,13 +13,13 @@ export default (req: NextApiRequest, res: NextApiResponse) => {
   https.get(randomImage, (response) => {
     if (response.statusCode !== 200) {
       res.statusCode = 500;
-      res.end('Fehler beim Abrufen des Bildes.');
+      res.end('Failed to fetch image.');
       return;
     }
     res.setHeader('Content-Type', 'image/jpeg');
     response.pipe(res);
   }).on('error', (e) => {
     res.statusCode = 500;
-    res.end('Serverfehler: ' + e.message);
+    res.end('Server error: ' + e.message);
   });
 };

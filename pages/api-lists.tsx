@@ -1,15 +1,56 @@
-// pages/api-list.tsx
+// pages/api-lists.tsx
 import { useState } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
-import Image from 'next/image';
 import { FaBars } from 'react-icons/fa';
 
+type ApiEntry = {
+  title: string;
+  description?: string;
+  path: string;
+};
+
+const apiEntries: ApiEntry[] = [
+  {
+    title: 'Nature Images',
+    description: 'A random image from a curated nature collection.',
+    path: '/api/nature-image',
+  },
+  {
+    title: 'Nature 2000',
+    description: 'A large nature image collection endpoint.',
+    path: '/api/nature-2000',
+  },
+  {
+    title: 'Night Sky',
+    description: 'A random image from a night sky collection.',
+    path: '/api/night-sky',
+  },
+  {
+    title: 'Skeleton Images',
+    description: 'Skeleton-themed random images.',
+    path: '/api/skeleton-random-image',
+  },
+  {
+    title: 'Studio Ghibli',
+    description: 'Random imagery inspired by Studio Ghibli style.',
+    path: '/api/studio-ghibli',
+  },
+  {
+    title: 'Minecraft Memes',
+    description: 'Random Minecraft meme images.',
+    path: '/api/minecraft-memes',
+  },
+  {
+    title: 'Swag Wallpapers',
+    description: 'Random wallpapers from the swag collection.',
+    path: '/api/swag-wallpaper',
+  },
+];
+
 export default function ApiList() {
-  // Zustand für das Mobile Menü
   const [menuOpen, setMenuOpen] = useState(false);
 
-  // Schließt das mobile Menü nach Klick auf einen Link
   const handleLinkClick = () => {
     if (menuOpen) setMenuOpen(false);
   };
@@ -20,13 +61,14 @@ export default function ApiList() {
         <title>Random Image API List</title>
         <meta charSet="UTF-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="description" content="Liste der verfügbaren Random Image APIs von Woxly.de" />
+        <meta
+          name="description"
+          content="List of available Random Image APIs provided by Woxly.de."
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        {/* Favicon */}
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      {/* Navigation */}
       <nav className="fixed w-full bg-white bg-opacity-95 shadow z-50">
         <div className="flex justify-between items-center px-5 py-4 max-w-7xl mx-auto">
           <Link legacyBehavior href="/">
@@ -36,7 +78,7 @@ export default function ApiList() {
             <button
               onClick={() => setMenuOpen(!menuOpen)}
               className="text-gray-800 hover:text-blue-600 focus:outline-none"
-              aria-label="Menü umschalten"
+              aria-label="Toggle menu"
             >
               <FaBars className="text-2xl" />
             </button>
@@ -66,10 +108,10 @@ export default function ApiList() {
                 </a>
               </Link>
             </li>
-              <li>
+            <li>
               <Link legacyBehavior href="/docs">
                 <a
-                  className="block py-2 md:py-0 text-gray-800 hover:text-blue-600 "
+                  className="block py-2 md:py-0 text-gray-800 hover:text-blue-600"
                   onClick={handleLinkClick}
                 >
                   Docs
@@ -91,190 +133,47 @@ export default function ApiList() {
         </div>
       </nav>
 
-      {/* Hauptinhalt */}
       <main className="pt-24 pb-12 px-5 max-w-7xl mx-auto">
         <h1 className="text-center text-4xl font-bold mb-8">
           <b>Hennes617/</b>random_image
         </h1>
 
         <h2 className="text-2xl font-semibold mb-6">
-          <b>APIs List:</b>
+          <b>API List</b>
         </h2>
 
         <ul className="space-y-12">
-          {/* Example Images */}
-          <li>
-            <h3 className="text-xl font-semibold mb-2">Natur Images</h3>
-            <p className="text-gray-700 mb-4">
-              A set of Natur images to showcase how this tool works.
-            </p>
-            <div className="flex items-center space-x-4 mb-4">
-              <Link legacyBehavior href="/api/nature-image">
-                <a className="px-6 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-800 transition">
-                  Render Page
-                </a>
-              </Link>
-              
-            </div>
-            <div className="bg-gray-100 p-4 rounded-lg mb-4">
-              <code className="text-gray-800">
-                  https://random-image.woxly.de/api/nature-image
-              </code>
-            </div>
-     
-          </li>
-        {/* 2000 natur bilder */}
-          <li>
-            <h3 className="text-xl font-semibold mb-2">2000 Natur Images</h3>
-            <p className="text-gray-700 mb-4">
-              A collection of over 2000 Natur images 
-            </p>
-            <div className="flex items-center space-x-4 mb-4">
-              <Link legacyBehavior href="/api/natur-2000">
-                <a className="px-6 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-800 transition">
-                  Render Page
-                </a>
-              </Link>
-              
-            </div>
-            <div className="bg-gray-100 p-4 rounded-lg mb-4">
-              <code className="text-gray-800">
-                https://random-image.woxly.de/api/natur-2000
-              </code>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-              
-             
-            </div>
-          </li>
-        {/* Night-sky */}
-          <li>
-            <h3 className="text-xl font-semibold mb-2">Night Sky</h3>
-            <p className="text-gray-700 mb-4">
-              A collection of over 2000 Night Sky images 
-            </p>
-            <div className="flex items-center space-x-4 mb-4">
-              <Link legacyBehavior href="/api/night-sky">
-                <a className="px-6 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-800 transition">
-                  Render Page
-                </a>
-              </Link>
-              
-            </div>
-            <div className="bg-gray-100 p-4 rounded-lg mb-4">
-              <code className="text-gray-800">
-                https://random-image.woxly.de/api/night-sky
-              </code>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-              
-             
-            </div>
-          </li>
-          {/* Skeleton Images */}
-          <li>
-            <h3 className="text-xl font-semibold mb-2">Skeleton Images</h3>
-            <p className="text-gray-700 mb-4">
-              A collection of skeleton-themed images, suitable for all audiences.
-            </p>
-            <div className="flex items-center space-x-4 mb-4">
-              <Link legacyBehavior href="/api/skeleton-random-image">
-                <a className="px-6 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-800 transition">
-                  Render Page
-                </a>
-              </Link>
-              
-            </div>
-            <div className="bg-gray-100 p-4 rounded-lg mb-4">
-              <code className="text-gray-800">
-                https://random-image.woxly.de/api/skeleton-random-image
-              </code>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-              
-             
-            </div>
-          </li>
-{/* studio-ghibli */}
-          <li>
-            <h3 className="text-xl font-semibold mb-2">Studio Ghibli</h3>
-            
-            <div className="flex items-center space-x-4 mb-4">
-              <Link legacyBehavior href="/api/studio-ghibli">
-                <a className="px-6 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-800 transition">
-                  Render Page
-                </a>
-              </Link>
-              
-            </div>
-            <div className="bg-gray-100 p-4 rounded-lg mb-4">
-              <code className="text-gray-800">
-                https://random-image.woxly.de/api/studio-ghibli
-              </code>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-              
-             
-            </div>
-          </li>
-          {/* Minecraft Memes */}
-          <li>
-            <h3 className="text-xl font-semibold mb-2">Minecraft Memes</h3>
-        
-            <div className="flex items-center space-x-4 mb-4">
-              <Link legacyBehavior href="/api/minecraft-memes">
-                <a className="px-6 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-800 transition">
-                  Render Page
-                </a>
-              </Link>
-              
-            </div>
-            <div className="bg-gray-100 p-4 rounded-lg mb-4">
-              <code className="text-gray-800">
-                https://random-image.woxly.de/api/minecraft-memes
-              </code>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-              
-             
-            </div>
-          </li>
-          {/* Swag Wallpapers */}
-          <li>
-            <h3 className="text-xl font-semibold mb-2">Swag Wallpapers</h3>
-            <p className="text-gray-700 mb-4">
-              These wallpapers are stylish and ready for you to use.
-            </p>
-            <div className="flex items-center space-x-4 mb-4">
-              <Link legacyBehavior href="/api/swag-wallpaper">
-                <a className="px-6 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-800 transition">
-                  Render Page
-                </a>
-              </Link>
-              
-            </div>
-            <div className="bg-gray-100 p-4 rounded-lg mb-4">
-              <code className="text-gray-800">
-                  https://random-image.woxly.de/api/swag-wallpaper
-              </code>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-           
-             
-            </div>
-          </li>
+          {apiEntries.map((entry) => {
+            const fullUrl = `https://random-image.woxly.de${entry.path}`;
+
+            return (
+              <li key={entry.path}>
+                <h3 className="text-xl font-semibold mb-2">{entry.title}</h3>
+                {entry.description && <p className="text-gray-700 mb-4">{entry.description}</p>}
+                <div className="flex items-center space-x-4 mb-4">
+                  <Link legacyBehavior href={entry.path}>
+                    <a className="px-6 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-800 transition">
+                      Render Page
+                    </a>
+                  </Link>
+                </div>
+                <div className="bg-gray-100 p-4 rounded-lg mb-4">
+                  <code className="text-gray-800">{fullUrl}</code>
+                </div>
+              </li>
+            );
+          })}
         </ul>
       </main>
 
-      {/* Footer */}
       <footer className="bg-gray-800 text-gray-400 py-5 text-center">
-        &copy; {new Date().getFullYear()} woxly.de Alle Rechte vorbehalten.
+        &copy; {new Date().getFullYear()} woxly.de All rights reserved.
         <div className="mt-2">
           <Link legacyBehavior href="/">
             <a className="text-white hover:underline mx-2">Home</a>
           </Link>
           |
-          <Link legacyBehavior href="/api-list">
+          <Link legacyBehavior href="/api-lists">
             <a className="text-white hover:underline mx-2">API List</a>
           </Link>
           |
