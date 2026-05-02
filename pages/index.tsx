@@ -137,12 +137,12 @@ export default function Home() {
           <pre className="bg-gray-900 text-gray-100 p-6 rounded-lg overflow-x-auto whitespace-pre">
             <code>
               {`<img
-                  src="/api/nature-2000"
-                  alt="Random image"
-                  width="500"
-                  height="300"
-                  class="rounded-lg shadow-lg"
-                />`}
+  src="/api/nature-2000"
+  alt="Random image"
+  width="500"
+  height="300"
+  class="rounded-lg shadow-lg"
+  />`}
             </code>
           </pre>
         </div>
